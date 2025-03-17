@@ -13,6 +13,7 @@ header {
     padding: 15px 50px;
     background: #004085;
     color: white;
+     overflow: hidden; /* Ensure header does not overflow */
 }
 
 nav ul {
@@ -36,6 +37,7 @@ nav ul li a {
     color: white;
     text-align: center;
     padding: 100px 20px;
+     overflow: hidden; /* Ensure header does not overflow */
 }
 
 .cta-button {
@@ -53,6 +55,7 @@ nav ul li a {
 #services {
     text-align: center;
     padding: 50px 20px;
+     overflow: hidden; /* Ensure header does not overflow */
 }
 
 .service-container {
@@ -71,6 +74,7 @@ nav ul li a {
 #projects {
     text-align: center;
     padding: 50px 20px;
+     overflow: hidden; /* Ensure header does not overflow */
 }
 
 .project-gallery {
@@ -109,6 +113,7 @@ nav ul li a {
     flex-direction: column;
     align-items: center;
     justify-content: center;
+     overflow: hidden; /* Ensure header does not overflow */
 }
 
 /* WhatsApp Button Below About Section */
@@ -139,6 +144,7 @@ nav ul li a {
 #contact {
     text-align: center;
     padding: 50px 20px;
+     overflow: hidden; /* Ensure header does not overflow */
 }
 
 form {
