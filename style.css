@@ -6,101 +6,6 @@ body {
     box-sizing: border-box;
 }
 
-nav ul {
-    list-style: none;
-    display: flex;
-}
-
-/* Services */
-#services {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.service-container {
-    display: flex;
-    justify-content: space-around;
-}
-
-.service {
-    width: 30%;
-    padding: 20px;
-    background: #f4f4f4;
-    border-radius: 5px;
-}
-
-/* Projects */
-#projects {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-.project-gallery {
-    display: flex;
-    justify-content: center;
-}
-
-.project-gallery img {
-    width: 30%;
-    margin: 10px;
-    border-radius: 5px;
-}
-
-/* Contact */
-#contact {
-    text-align: center;
-    padding: 50px 20px;
-}
-
-form {
-    max-width: 500px;
-    margin: auto;
-}
-
-input, textarea {
-    width: 100%;
-    padding: 10px;
-    margin: 10px 0;
-}
-
-button {
-    background: #004085;
-    color: white;
-    padding: 10px;
-    border: none;
-    cursor: pointer;
-}
-
-/* Footer */
-footer {
-    text-align: center;
-    background: #004085;
-    color: white;
-    padding: 10px;
-}
-
-/* WhatsApp Button */
-.whatsapp-button {
-    position: fixed;
-    bottom: 20px;
-    right: 20px;
-    width: 50px;
-    height: 50px;
-}
-
-.whatsapp{
-    height: 50px;
-    width : 50px;
-
-}
-/* Global Styles */
-body {
-    font-family: Arial, sans-serif;
-    margin: 0;
-    padding: 0;
-    box-sizing: border-box;
-}
-
 header {
     display: flex;
     justify-content: space-between;
@@ -152,4 +57,37 @@ nav ul li a:hover {
     font-size: 18px;
     margin-top: 10px;
     border-radius: 5px;
+}
+
+/* Projects Section */
+#projects {
+    text-align: center;
+    padding: 50px 20px;
+}
+
+.project-gallery {
+    display: flex;
+    justify-content: center;
+    gap: 10px;
+    flex-wrap: wrap;
+}
+
+.project-gallery img {
+    width: 30%;
+    border-radius: 5px;
+    transition: transform 0.3s ease;
+}
+
+.project-gallery img:hover {
+    transform: scale(1.05);
+}
+
+@media (max-width: 768px) {
+    .project-gallery {
+        flex-direction: column;
+        align-items: center;
+    }
+    .project-gallery img {
+        width: 80%;
+    }
 }
